@@ -1,3 +1,9 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .post{
     max-width: 40%;
     max-height: fit-content;
@@ -11,13 +17,16 @@
     margin: auto;
 }
 .img-header-post-data img, svg{
-    max-width: 35px;
+    max-width: 35px;   
 }
 .text-header-post-data{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:baseline;
     justify-content: space-between;
+}
+.text-header-post-data h3{
+    margin: 10px;
 }
 .header-post-data h3{
     font-size: small;
@@ -33,5 +42,10 @@
 }
 .main-post-data img{
     max-width: fit-content;
-    
+    margin: auto;
+}
+.interative-post-data {
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
 }
