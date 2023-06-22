@@ -18,14 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { SideBarComponent } from './side-bar/side-bar.component';
-import {
-    FormControl,
-    FormGroupDirective,
-    NgForm,
-    Validators,
-    FormsModule,
-    ReactiveFormsModule,
-} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 
 @NgModule({
@@ -34,10 +27,10 @@ import { ErrorStateMatcher } from '@angular/material/core';
         PostUserComponent,
         FeedPageComponent,
         LoginPageComponent,
-        SideBarComponent,
+        NavComponent,
+        SideBarComponent
     ],
     providers: [
-        { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher }
     ],
     bootstrap: [AppComponent],
     imports: [
@@ -47,10 +40,6 @@ import { ErrorStateMatcher } from '@angular/material/core';
         MatNativeDateModule,
         MatDatepickerModule,
         MatCardModule,
-        FormControl,
-        FormGroupDirective,
-        NgForm,
-        Validators,
         FormsModule,
         ReactiveFormsModule,
         BrowserModule,
@@ -58,7 +47,6 @@ import { ErrorStateMatcher } from '@angular/material/core';
         MatToolbarModule,
         MatIconModule,
         BrowserAnimationsModule,
-        NavComponent,
         MatButtonModule,
         MatCardModule
     ]
