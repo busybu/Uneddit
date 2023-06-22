@@ -20,6 +20,8 @@ import { MatNativeDateModule, ShowOnDirtyErrorStateMatcher } from '@angular/mate
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { RegisterPageComponent } from './register-page/register-page.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import { ErrorStateMatcher } from '@angular/material/core';
         FeedPageComponent,
         LoginPageComponent,
         NavComponent,
-        SideBarComponent
+        SideBarComponent,
+        RegisterPageComponent,
+        CreatePostComponent
     ],
     providers: [
     ],
